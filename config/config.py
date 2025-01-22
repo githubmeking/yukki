@@ -17,14 +17,14 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "20213849"))
+API_HASH = getenv("API_HASH","e97df0eca2a9531c80202c1a7d3f5721")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN","6591274198:AAFFsE0pTw3tUE9kq49QjUBarwLaQTdjurY")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", ""mongodb+srv://sadbot19033:sadbotbey@cluster0.01dwa.mongodb.net/"")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -37,14 +37,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002143343100"))
 
 # A name for your Music bot.
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "6180151150").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -138,11 +138,11 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
-STRING3 = getenv("STRING_SESSION3", None)
-STRING4 = getenv("STRING_SESSION4", None)
-STRING5 = getenv("STRING_SESSION5", None)
+STRING1 = getenv("STRING_SESSION", "AgDY4YEATvn3sIR0kiN1sOLkAONRhouL-KGZtyDH-EMS-34a_muXwk60pfuL4b-uqq-MniAlll9wQRb2Fc7SVpPILHAxvp38bzLHssWLvSl0O9Evo1BtB9Pki1awykxVgeOjiVJxBaU1ynHkvm_dPhNHhYnOJMDTiqWL0v9O6UMvcpF8OS9OnbQuvsDDE-xCu7lhLMAiQb_sk-wpGYyE9bpzvb89whwUMPp1Zv-03VZZIjPUrcWU-qheggjhD7AiwxaWFBsP69RaNCZ_NTz18T8yl6Cnx6xiwsEPrJFxINrw3RHC5n9Eu-2FToZlrEhIaxeOZHsje0RQ_yCdyRs0BzC5HpwR4gAAAAE1ZEE9AA")
+STRING2 = getenv("STRING_SESSION2", "AgDY4YEATvn3sIR0kiN1sOLkAONRhouL-KGZtyDH-EMS-34a_muXwk60pfuL4b-uqq-MniAlll9wQRb2Fc7SVpPILHAxvp38bzLHssWLvSl0O9Evo1BtB9Pki1awykxVgeOjiVJxBaU1ynHkvm_dPhNHhYnOJMDTiqWL0v9O6UMvcpF8OS9OnbQuvsDDE-xCu7lhLMAiQb_sk-wpGYyE9bpzvb89whwUMPp1Zv-03VZZIjPUrcWU-qheggjhD7AiwxaWFBsP69RaNCZ_NTz18T8yl6Cnx6xiwsEPrJFxINrw3RHC5n9Eu-2FToZlrEhIaxeOZHsje0RQ_yCdyRs0BzC5HpwR4gAAAAE1ZEE9AA")
+STRING3 = getenv("STRING_SESSION3", "AgDY4YEATvn3sIR0kiN1sOLkAONRhouL-KGZtyDH-EMS-34a_muXwk60pfuL4b-uqq-MniAlll9wQRb2Fc7SVpPILHAxvp38bzLHssWLvSl0O9Evo1BtB9Pki1awykxVgeOjiVJxBaU1ynHkvm_dPhNHhYnOJMDTiqWL0v9O6UMvcpF8OS9OnbQuvsDDE-xCu7lhLMAiQb_sk-wpGYyE9bpzvb89whwUMPp1Zv-03VZZIjPUrcWU-qheggjhD7AiwxaWFBsP69RaNCZ_NTz18T8yl6Cnx6xiwsEPrJFxINrw3RHC5n9Eu-2FToZlrEhIaxeOZHsje0RQ_yCdyRs0BzC5HpwR4gAAAAE1ZEE9AA")
+STRING4 = getenv("STRING_SESSION4", "AgDY4YEATvn3sIR0kiN1sOLkAONRhouL-KGZtyDH-EMS-34a_muXwk60pfuL4b-uqq-MniAlll9wQRb2Fc7SVpPILHAxvp38bzLHssWLvSl0O9Evo1BtB9Pki1awykxVgeOjiVJxBaU1ynHkvm_dPhNHhYnOJMDTiqWL0v9O6UMvcpF8OS9OnbQuvsDDE-xCu7lhLMAiQb_sk-wpGYyE9bpzvb89whwUMPp1Zv-03VZZIjPUrcWU-qheggjhD7AiwxaWFBsP69RaNCZ_NTz18T8yl6Cnx6xiwsEPrJFxINrw3RHC5n9Eu-2FToZlrEhIaxeOZHsje0RQ_yCdyRs0BzC5HpwR4gAAAAE1ZEE9AA")
+STRING5 = getenv("STRING_SESSION5", "AgDY4YEATvn3sIR0kiN1sOLkAONRhouL-KGZtyDH-EMS-34a_muXwk60pfuL4b-uqq-MniAlll9wQRb2Fc7SVpPILHAxvp38bzLHssWLvSl0O9Evo1BtB9Pki1awykxVgeOjiVJxBaU1ynHkvm_dPhNHhYnOJMDTiqWL0v9O6UMvcpF8OS9OnbQuvsDDE-xCu7lhLMAiQb_sk-wpGYyE9bpzvb89whwUMPp1Zv-03VZZIjPUrcWU-qheggjhD7AiwxaWFBsP69RaNCZ_NTz18T8yl6Cnx6xiwsEPrJFxINrw3RHC5n9Eu-2FToZlrEhIaxeOZHsje0RQ_yCdyRs0BzC5HpwR4gAAAAE1ZEE9AA")
 
 
 #  __     ___    _ _  ___  _______   __  __ _    _  _____ _____ _____   ____   ____ _______
